@@ -7,9 +7,9 @@ output "aws_listener" {
 }
 
 output "targetGroup" {
-  value = aws_lb_target_group.tg.id
+  value = aws_lb_target_group.tg.*.id
 }
 
 output "targetgroupAttachment" {
-  value = aws_lb_target_group_attachment.tga.id
+  value = aws_lb_target_group_attachment.tga.*.id
 }
