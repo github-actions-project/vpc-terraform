@@ -7,6 +7,8 @@ resource "aws_lb" "alb" {
   subnets            = var.subnets
 }
 
+
+
 # Listener
 resource "aws_lb_listener" "listener" {
   load_balancer_arn = aws_lb.alb.arn
